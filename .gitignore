@@ -1,6 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+section6/today-i-learned/*
+!section6/today-i-learned/.gitkeep
 **/node_modules/
 /node_modules/
 /.pnp
