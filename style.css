@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0c0a09;
+  color: #e7e5e4;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 50px;
+}
+
+.bigBtn {
+  border: none;
+  color: #e7e5e4;
+  font-weight: bolder;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  cursor: pointer;
+  transition: 0.4s;
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  transform: rotate(2deg) scale(110%);
+}
+
+.categoryBtn {
+  cursor: pointer;
+  transition: 0.4s;
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  color: #e7e5e4;
+  font-weight: bolder;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo * {
+  padding: 0 10px;
+}
+
+.factForm {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.factForm input,
+select {
+  height: 30px;
+  width: 200px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 30px 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.categoryfilter > li {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.factlist {
+  background-color: #292524;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.factlist p {
+  width: 70%;
+}
+
+span {
+  width: 10%;
+  border-radius: 130px;
+  height: 25px;
+  font-size: small;
+  padding: 11px 5px 0px 1px;
+  text-align: center;
+}
+
+.voteBtn button {
+  width: 45px;
+  background-image: none;
+  background-color: #79716b;
+  border: navajowhite;
+  margin: 1px;
+}
+
+.technology {
+  background-color: #3b82f6;
+}
+
+.society {
+  background-color: #eab308;
+}
+
+.finance {
+  background-color: #ef4444;
+}

@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today I Learned</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <header>
-        <img src="logo.png" alt="logo" height="56" />
-        <h1>Today I Learned</h1>
-        <button>share a fact</button>
+      <header class="header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" height="56" />
+          <h1>Today I Learned</h1>
+        </div>
+        <button class="btn bigBtn">share a fact</button>
       </header>
       <form action="" class="factForm">
         <input type="text" placeholder="enter valid fact" />
@@ -21,38 +24,55 @@
           <option value="science">science</option>
           <option value="finance">finance</option>
         </select>
+        <button class="btn bigBtn">close</button>
       </form>
-      <aside class="categoryfilter">
-        <li><button class="btn categoryBtn">All</button></li>
-        <li><button class="btn categoryBtn">technology</button></li>
-        <li><button class="btn categoryBtn">science</button></li>
-        <li><button class="btn categoryBtn">finance</button></li>
-      </aside>
-      <section class="facts">
-        <ul>
-          <li class="factlist">
-            <p></p>
-            <span></span>
-            <button class="btn voteBtn">👍</button
-            ><button class="btn voteBtn">🤯</button
-            ><button class="btn voteBtn">⛔</button>
+      <div class="main">
+        <aside class="categoryfilter">
+          <li>
+            <button class="btn bigBtn allCategoryBtn">all</button>
           </li>
-          <li class="factlist">
-            <p></p>
-            <span></span>
-            <button class="btn voteBtn">👍</button
-            ><button class="btn voteBtn">🤯</button
-            ><button class="btn voteBtn">⛔</button>
+          <li>
+            <button class="btn categoryBtn technology">technology</button>
           </li>
-          <li class="factlist">
-            <p></p>
-            <span></span>
-            <button class="btn voteBtn">👍</button
-            ><button class="btn voteBtn">🤯</button
-            ><button class="btn voteBtn">⛔</button>
-          </li>
-        </ul>
-      </section>
+          <li><button class="btn categoryBtn society">science</button></li>
+          <li><button class="btn categoryBtn finance">finance</button></li>
+        </aside>
+        <section class="facts">
+          <ul>
+            <li class="factlist">
+              <p>React is being developed by Meta (formerly facebook)</p>
+              <span style="background-color: #3b82f6">technology</span>
+              <div class="voteBtn">
+                <button>👍</button>
+                <button>🤯</button>
+                <button>⛔</button>
+              </div>
+            </li>
+            <li class="factlist">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+              </p>
+              <span style="background-color: #16a34a">society</span>
+              <div class="voteBtn">
+                <button>👍</button>
+                <button>🤯</button>
+                <button>⛔</button>
+              </div>
+            </li>
+            <li class="factlist">
+              <p>Lisbon is the capital of Portugal</p>
+              <span style="background-color: #16a34a">society</span>
+              <div class="voteBtn">
+                <button>👍</button>
+                <button>🤯</button>
+                <button>⛔</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
   </body>
 </html>
