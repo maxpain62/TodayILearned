@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today I Learned</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" height="56" />
+          <h1>Today I Learned</h1>
+        </div>
+        <button class="btn bigBtn">share a fact</button>
+      </header>
+      <form action="" class="factForm">
+        <input
+          class="factFormChild"
+          type="text"
+          placeholder="enter valid fact"
+        />
+        <span>200</span>
+        <input
+          class="factFormChild"
+          type="text"
+          placeholder="enter source of fact"
+        />
+        <select
+          class="factFormChild"
+          name="categoryDropDown"
+          id="categoryDropDown"
+        >
+          <option value="">choose category</option>
+          <option value="technology">technology</option>
+          <option value="science">science</option>
+          <option value="finance">finance</option>
+        </select>
+        <button class="btn bigBtn">close</button>
+      </form>
+      <div class="main">
+        <aside class="categoryFilter">
+          <li>
+            <button class="btn bigBtn allCategoryBtn categoryFilter">
+              all
+            </button>
+          </li>
+          <div class="categoryFilterBtn">
+            <li>
+              <button class="btn categoryBtn technology">technology</button>
+            </li>
+            <li><button class="btn categoryBtn society">science</button></li>
+            <li><button class="btn categoryBtn finance">finance</button></li>
+          </div>
+        </aside>
+        <section class="facts">
+          <ul>
+            <li class="factlist">
+              <p>React is being developed by Meta (formerly facebook)</p>
+              <span style="background-color: #3b82f6">technology</span>
+              <div class="voteBtn">
+                <button>👍</button>
+                <button>🤯</button>
+                <button>⛔</button>
+              </div>
+            </li>
+            <li class="factlist">
+              <p>
+                Millennial dads spend 3 times as much time with their kids than
+                their fathers spent with them. In 1982, 43% of fathers had never
+                changed a diaper. Today, that number is down to 3%
+              </p>
+              <span style="background-color: #16a34a">society</span>
+              <div class="voteBtn">
+                <button>👍</button>
+                <button>🤯</button>
+                <button>⛔</button>
+              </div>
+            </li>
+            <li class="factlist">
+              <p>Lisbon is the capital of Portugal</p>
+              <span style="background-color: #16a34a">society</span>
+              <div class="voteBtn">
+                <button>👍</button>
+                <button>🤯</button>
+                <button>⛔</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
