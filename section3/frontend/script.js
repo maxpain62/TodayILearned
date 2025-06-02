@@ -36,6 +36,16 @@ categoryFilterBtnList.innerHTML = "";
 const factListGenerator = document.querySelector(".facts ul");
 factListGenerator.innerHTML = "";
 
+const categoryDropDown = document.getElementById("categoryDropDown");
+
+function createCategoryOptions() {
+  const categoryOptions = CATEGORIES.map(
+    (cat) => `<option>${cat.name}</option>`
+  );
+  categoryDropDown.insertAdjacentHTML("beforeend", categoryOptions);
+}
+createCategoryOptions();
+
 function createCategoryFilterBtn() {
   const htmlArray = CATEGORIES.map(
     (cat) =>

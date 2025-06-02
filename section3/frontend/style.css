@@ -84,6 +84,10 @@ select {
   display: none;
 }
 
+#categoryDropDown option {
+  text-transform: uppercase;
+}
+
 /* .factForm > input:first-child {
   width: 60%;
 } */
