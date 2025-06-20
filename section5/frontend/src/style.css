@@ -84,10 +84,6 @@ header {
   text-transform: uppercase;
 }
 
-/* .factForm > input:first-child {
-  width: 60%;
-} */
-
 .main {
   gap: 10px;
   display: grid;
@@ -135,16 +131,6 @@ li {
   display: inline;
 }
 
-/* .factlistchild {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-} */
-
-/* .factlist p {
-  width: 70%;
-} */
-
 span {
   width: 10%;
   border-radius: 130px;
@@ -153,7 +139,7 @@ span {
   padding: 11px 5px 0px 1px;
   text-align: center;
 }
-*/ .tag {
+.tag {
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Coiny", sans-serif;
