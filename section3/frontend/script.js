@@ -1,3 +1,5 @@
+const { useState } = require("react");
+
 const CATEGORIES = [
   { name: "technology", color: "#3b82f6" },
   { name: "science", color: "#16a34a" },
@@ -11,6 +13,7 @@ const CATEGORIES = [
 
 const factFormBtn = document.getElementById("factButton");
 const factForm = document.querySelector(".factForm");
+const [currentCategory, setCurrentCategory] = useState("all");
 
 factFormBtn.addEventListener("click", (event) => {
   if (factForm.classList.contains("hidden")) {
@@ -57,6 +60,8 @@ function createCategoryFilterBtn() {
   categoryFilterBtnList.insertAdjacentHTML("afterbegin", html);
 }
 createCategoryFilterBtn();
+
+function filterWithButton() {}
 
 function generateFactList(dataArray) {
   const factArray = dataArray.map(
